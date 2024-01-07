@@ -1,8 +1,10 @@
 /* :root {
+  --aqua: rgb(77, 223 ,246);
+  --blue: rgb(5, 5, 85);
+  --light-gray: rgb(217, 217, 217);
+
+  --regular-font: 20px;
 } */
 
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-} */
+
+

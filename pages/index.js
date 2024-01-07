@@ -1,10 +1,13 @@
-import React from 'react';
+// import React from 'react';
 import Head from 'next/head';
-import Login from './components/login';
-import styles from '../styles/login.module.css';
+import styles from '@/styles/home.module.css';
+import Login from '@/components/login';
+import ImageSlider from '@/components/ImageSlider';
 
-const Home = () => {
+
+export default function Home() {
   return (
+
     <>
       <Head>
         <title>Instagram Login</title>
@@ -12,11 +15,15 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/insta.favicon.ico" />
       </Head>
-      <main className={`${styles.main}`}>
-        <Login />
-      </main>
-    </>
-  );
-};
 
-export default Home;
+     <main className={`${styles.main}`}>   
+     <Login/>
+
+     <ImageSlider/>
+     </main>
+
+     </>
+
+     )
+  };
+

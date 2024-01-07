@@ -1,0 +1,11 @@
+.ImageSlider {
+    
+
+ position: absolute;
+  top: 161px;
+ left: 352px;
+    max-width: 100%;
+    max-height: 82%;
+    width: auto;
+    height: auto;
+  }
