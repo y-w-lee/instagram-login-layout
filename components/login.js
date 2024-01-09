@@ -6,15 +6,7 @@ const Login = () => {
 
 
     <div className={styles.container}>
-      {/* <div className={styles.phones}>
-        <div className={styles.mainImage}>
-          <img src="/images-ig/phones.png" alt="phones" />
-        </div>
-        <div className={styles.screenshots}>
-          <img id="screenshot1" 
-          src="/images-ig/phones.png" alt="Image 1" />
-        </div>
-      </div> */}
+
       <div className={styles.rightForm}>
         <div className={styles.loginForm}>
           <form action="#" className={styles.form}>
@@ -60,8 +52,14 @@ const Login = () => {
         <div className={styles.apps}>
           <p>Get the app.</p>
           <div className={styles.buttons}>
+          <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=en&gl=US" target="_blank">
             <img src="/images-ig/google-play.png" alt="Google Play image" />
+            </a>
+
+            <a href='https://apps.microsoft.com/detail/9NBLGGH5L9XT?hl=en-US&gl=US' target="_blank">
             <img src="/images-ig/microsoft.png" alt="Microsoft image" />
+            </a>
+
           </div>
         </div>
       </div>
