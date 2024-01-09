@@ -1,4 +1,4 @@
-.main { 
+.main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -7,15 +7,43 @@
   min-height: 20vh;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.leftSection,
+.rightSection {
+  flex: 1;
+  margin: 0 1rem; /* Add spacing between sections */
+}
 
 /* Mobile */
 @media (max-width: 700px) {
-    
+
+  .leftSection,
+  .rightSection {
+    width: 100%; /* Take up full width on smaller screens */
+    margin: 0; /* Remove spacing between sections */
+  }
+
+  .leftSection {
+    display: none; /* Hides ImageSlider on smaller screens */
+  }
 }
 
-
 /* Tablet & Smaller Desktop */
-@media (max-width: 701px) and (max-width: 1120px) {
+@media (min-width: 701px) and (max-width: 1120px) {
+  .leftSection,
+  .rightSection {
+    width: 100%; /* Take up full width on smaller screens */
+    margin: 0; /* Remove spacing between sections */
+  }
 
+  .leftSection {
+    display: none; /* Hides ImageSlider on smaller screens */
+  }
 }
 

@@ -1,13 +1,11 @@
-// import React from 'react';
+import React from 'react';
 import Head from 'next/head';
 import styles from '@/styles/home.module.css';
 import Login from '@/components/login';
 import ImageSlider from '@/components/ImageSlider';
 
-
 export default function Home() {
   return (
-
     <>
       <Head>
         <title>Instagram Login</title>
@@ -16,14 +14,18 @@ export default function Home() {
         <link rel="icon" href="/insta.favicon.ico" />
       </Head>
 
-     <main className={`${styles.main}`}>   
-     <Login/>
+      <main className={styles.main}>
+        <div className={styles.container}>
+          <div className={styles.leftSection}>
+            <ImageSlider />
+          </div>
+          <div className={styles.rightSection}>
+            <Login />
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
 
-     <ImageSlider/>
-     </main>
-
-     </>
-
-     )
-  };
 

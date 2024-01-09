@@ -6,15 +6,15 @@ const Login = () => {
 
 
     <div className={styles.container}>
-      <div className={styles.phones}>
+      {/* <div className={styles.phones}>
         <div className={styles.mainImage}>
           <img src="/images-ig/phones.png" alt="phones" />
         </div>
-        {/* <div className={styles.screenshots}>
+        <div className={styles.screenshots}>
           <img id="screenshot1" 
           src="/images-ig/phones.png" alt="Image 1" />
-        </div> */}
-      </div>
+        </div>
+      </div> */}
       <div className={styles.rightForm}>
         <div className={styles.loginForm}>
           <form action="#" className={styles.form}>
